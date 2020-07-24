@@ -186,6 +186,57 @@ El profesor Orlando Duran presenta un modelo que integra el costo de las decisio
 
 
 
+\hypertarget{Contexto}{
+\section{Contexto }
+\label{Contexto}}
+
+\subsection{¿Cómo se quiere solucionar?}
+Uno de los temas mas importantes en la actualidad es la vida útil de loa activos físicos en cualquier industria, sobre todo si hablamos de activos de gran valor como, por ejemplo, maquinarias de la gran minería.
+Durante los últimos años, nació una necesidad por parte de las empresas de mantener sus máquinas con altos estándares de confiabilidad y de disponibilidad, como con la mayor utilización que pueda tener un activo, sin que se acelere su desuso permanente. 
+El interés no abarca solo el área del estado de la máquina por un tema de vida, en esto también destacan los costos, y en este caso mantención.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figuras/porcentajes.JPG}
+    \caption{Contexto}
+    \label{fig:my_label}
+\end{figure}
+Como bien se explica en la figura, del costo de la producción, el costo de mantenimiento es en promedio un 20$\%$, y de su totalidad, el 59$\%$ es del costo de los materiales, lo que serían los repuestos. 
+Dentro de las mayores preocupaciones en los costos de una empresa, destacan 2 grandes problemas:
+
+\begin{itemize}
+    \item 	Unos de los mayores costos en el área de mantenimiento son constituido por los inventarios de componentes.
+Grandes cantidades de dinero invertido en la bodega.
+    \item 	Necesidad de garantizar un equilibrio entre costo de capital y disponibilidad
+\end{itemize}
+
+Una de las formas de analizar seria la curva de la bañera, en donde para ganar disponibilidad lo que se requiere es mayor cantidad de repuestos, pero, por otro lado, para reducir los impuestos, podemos tomar dos caminos, bajar el flujo de entrada de la bodega o utilizar de la que ya se ha invertido y no reponer. 
+Ahora hablando de la logística de componentes, cuando esta no anda bien, hay dos factores negativos, el primero es un aumento en los costos de stock, que genera una acumulación si no hay buena logística, y segundo afectamos la mantenibilidad. Por lo tanto, si produzco menos o produzco mal, y tengo mayores costos, se verá afectada la utilidad.
+La pregunta de investigación a la cual se llego conociendo todos estos datos fue: 
+
+\textsl{''How all the decisions taken by spare parts managers do may affect the TCO?”. (Cómo todas las decisiones tomadas por los administradores de repuestos pueden afectar el costo de propiedad o de ciclo de vida del activo)''}
+Para lograr responder esta pregunta, tomaron la curva de la bañera antes mencionada, y utilizaron las siguientes ecuaciones:
+
+\begin{equation}
+    R(t) = e^{{-(\frac{t-t_0}{n})}^{\beta}}
+\end{equation}
+
+\begin{equation}
+    \lambda(t) = \frac{\beta}{n} \ \! (\frac{t}{n})^{\beta - 1} 
+\end{equation}
+
+$R(t)$: confiabilidad en función del tiempo
+
+$\lambda(t)$: Función de la tasa de falla en función del tiempo
+Donde $\beta$ y $n$ son parámetros característicos de cada equipo, como se comporta la confiabilidad en función del tiempo dado $x$ circunstancia.
+
+En conjunto con el modelo de costo de ciclo de vida, se plantearon un desafío, el de estimar de una forma muy aproximada, todos los componentes de costos que se van a presentar, de todo lo que va a ocurrir en los n periodos del ciclo de vida del activo. Y se habla de una buena aproximación, ya que los costos de inventario de repuestos son muy difíciles de asociar, la inexistencia de repuestos a la indisponibilidad del equipo. 
+
+Tomando todos los datos destacados anteriormente, se desarrolló el modelo de costeo basado en actividades. Que busca modelos o modelos que ayuden a retratar la influencia que tienen la caja de gestión de repuestos, e integrar en un modelo de costos lo que son las decisiones, las actividades vinculadas a la logística de los repuestos con las actividades vinculadas a la gestión de los activos.Ya que podemos ver el en el mapa adjunto, los costos de inventario de repuestos esta dentro de los llamados costos sumergidos, los cuales no son faciles de ver y menos estimar.  
+
+
+
+
 \begin{center}
     
 
@@ -256,53 +307,6 @@ Pérdidas de Producción \\Costos de Ineficiencia \\Costos Logisticos \\Capital 
 \end{center}
 
 
-\hypertarget{Contexto}{
-\section{Contexto }
-\label{Contexto}}
-
-\subsection{¿Cómo se quiere solucionar?}
-Uno de los temas mas importantes en la actualidad es la vida útil de loa activos físicos en cualquier industria, sobre todo si hablamos de activos de gran valor como, por ejemplo, maquinarias de la gran minería.
-Durante los últimos años, nació una necesidad por parte de las empresas de mantener sus máquinas con altos estándares de confiabilidad y de disponibilidad, como con la mayor utilización que pueda tener un activo, sin que se acelere su desuso permanente. 
-El interés no abarca solo el área del estado de la máquina por un tema de vida, en esto también destacan los costos, y en este caso mantención.
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figuras/porcentajes.JPG}
-    \caption{Contexto}
-    \label{fig:my_label}
-\end{figure}
-Como bien se explica en la figura, del costo de la producción, el costo de mantenimiento es en promedio un 20$\%$, y de su totalidad, el 59$\%$ es del costo de los materiales, lo que serían los repuestos. 
-Dentro de las mayores preocupaciones en los costos de una empresa, destacan 2 grandes problemas:
-
-\begin{itemize}
-    \item 	Unos de los mayores costos en el área de mantenimiento son constituido por los inventarios de componentes.
-Grandes cantidades de dinero invertido en la bodega.
-    \item 	Necesidad de garantizar un equilibrio entre costo de capital y disponibilidad
-\end{itemize}
-
-Una de las formas de analizar seria la curva de la bañera, en donde para ganar disponibilidad lo que se requiere es mayor cantidad de repuestos, pero, por otro lado, para reducir los impuestos, podemos tomar dos caminos, bajar el flujo de entrada de la bodega o utilizar de la que ya se ha invertido y no reponer. 
-Ahora hablando de la logística de componentes, cuando esta no anda bien, hay dos factores negativos, el primero es un aumento en los costos de stock, que genera una acumulación si no hay buena logística, y segundo afectamos la mantenibilidad. Por lo tanto, si produzco menos o produzco mal, y tengo mayores costos, se verá afectada la utilidad.
-La pregunta de investigación a la cual se llego conociendo todos estos datos fue: 
-
-\textsl{''How all the decisions taken by spare parts managers do may affect the TCO?”. (Cómo todas las decisiones tomadas por los administradores de repuestos pueden afectar el costo de propiedad o de ciclo de vida del activo)''}
-Para lograr responder esta pregunta, tomaron la curva de la bañera antes mencionada, y utilizaron las siguientes ecuaciones:
-
-\begin{equation}
-    R(t) = e^{{-(\frac{t-t_0}{n})}^{\beta}}
-\end{equation}
-
-\begin{equation}
-    \lambda(t) = \frac{\beta}{n} \ \! (\frac{t}{n})^{\beta - 1} 
-\end{equation}
-
-$R(t)$: confiabilidad en función del tiempo
-
-$\lambda(t)$: Función de la tasa de falla en función del tiempo
-Donde $\beta$ y $n$ son parámetros característicos de cada equipo, como se comporta la confiabilidad en función del tiempo dado $x$ circunstancia.
-
-En conjunto con el modelo de costo de ciclo de vida, se plantearon un desafío, el de estimar de una forma muy aproximada, todos los componentes de costos que se van a presentar, de todo lo que va a ocurrir en los n periodos del ciclo de vida del activo. Y se habla de una buena aproximación, ya que los costos de inventario de repuestos son muy difíciles de asociar, la inexistencia de repuestos a la indisponibilidad del equipo. 
-
-Tomando todos los datos destacados anteriormente, se desarrolló el modelo de costeo basado en actividades. Que busca modelos o modelos que ayuden a retratar la influencia que tienen la caja de gestión de repuestos, e integrar en un modelo de costos lo que son las decisiones, las actividades vinculadas a la logística de los repuestos con las actividades vinculadas a la gestión de los activos. 
 
 \subsection{Costo logístico }
 
